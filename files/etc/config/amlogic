@@ -1,11 +1,9 @@
-#设置OpenWrt 文件的下载仓库
-sed -i "s|https.*/OpenWrt|https://github.com/iceyheart/N1-OpenWrt-Lede|g" package/luci-app-amlogic/root/etc/config/amlogic
-
-#设置 Releases 里 Tags 的关键字
-sed -i "s|ARMv8|s905d|g" package/luci-app-amlogic/root/etc/config/amlogic
-
-#设置 Releases 里 OpenWrt 文件的后缀
-sed -i "s|.img.gz|.OPENWRT_SUFFIX|g" package/luci-app-amlogic/root/etc/config/amlogic
-
-#4.设置 OpenWrt 内核的下载路径
-#sed -i "s|opt/kernel|https://github.com/USERNAME/REPOSITORY/KERNELPATH|g" package/luci-app-amlogic/root/etc/config/amlogic
+config amlogic 'config'
+	option amlogic_firmware_repo 'https://github.com/iceyheart/N1-OpenWrt-Lede'
+	option amlogic_firmware_tag 's905d'
+	option amlogic_firmware_suffix '.img.gz'
+	option amlogic_kernel_path 'opt/kernel'
+	option amlogic_kernel_branch '5.15'
+	option amlogic_firmware_config '1'
+	option amlogic_write_bootloader '1'
+	option amlogic_shared_fstype 'ext4'
