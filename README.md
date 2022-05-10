@@ -1,4 +1,4 @@
-# 精简 N1 OpenWrt 固件
+# N1 OpenWrt 轻量固件
 
 **集成**
 - amlogic：安装 OpenWrt 至 EMMC、手动上传升级/在线下载更新 OpenWrt 固件或内核版本、备份/恢复固件配置、快照管理及自定义固件/内核下载站点等功能；
