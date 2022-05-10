@@ -1,7 +1,8 @@
-# 云编译 N1 OpenWrt 固件
+# 精简 N1 OpenWrt 固件
 
 **集成**
-- SSR+、passwall、passwall2、nps、zerotier、kms、timectrol、KMS，其它服务略
+- amlogic：安装 OpenWrt 至 EMMC、手动上传升级/在线下载更新 OpenWrt 固件或内核版本、备份/恢复固件配置、快照管理及自定义固件/内核下载站点等功能；
+- 插件SSR+、passwall、passwall2、nps、zerotier、kms、timectrol、KMS，其它服务略
 
 **旁路网关模式**
 - DHCP关、wireless关
