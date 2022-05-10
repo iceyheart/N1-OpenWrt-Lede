@@ -113,7 +113,7 @@ jobs:
     - name: Create release
       uses: ncipollo/release-action@v1
       with:
-        tag: OpenWrt_S905D_${{ env.PACKAGED_OUTPUTDATE }}
+        tag: OpenWrt_s905d_${{ env.PACKAGED_OUTPUTDATE }}
         name: N1-OpenWrt | ${{ env.DATE }}
         allowUpdates: true
         artifacts: ${{ env.PACKAGED_OUTPUTPATH }}/*
