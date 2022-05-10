@@ -124,7 +124,7 @@ jobs:
           刷机固件简介：
             打包日期：${{ env.PACKAGED_OUTPUTDATE }}
             内核版本：${{ env.KERNEL_VERSION }}
-            默认IP：192.168.32.2 默认用户名密码： root/password
+            默认IP：192.168.1.200 默认用户名密码： root/password
             安装到EMMC：Login to OpenWrt → System → Amlogic Service → Install OpenWrt
             
     - name: Remove old Releases
