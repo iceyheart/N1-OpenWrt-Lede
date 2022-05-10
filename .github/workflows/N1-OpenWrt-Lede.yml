@@ -125,7 +125,7 @@ jobs:
             打包日期：${{ env.PACKAGED_OUTPUTDATE }}
             内核版本：${{ env.KERNEL_VERSION }}
             默认IP：192.168.1.200 默认用户名密码： root/password
-            安装到EMMC：Login to OpenWrt → System → Amlogic Service → Install OpenWrt
+            安装到EMMC及在线更新：系统-->晶晨宝盒
             
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@v0.1.0
