@@ -113,18 +113,20 @@ jobs:
     - name: Create release
       uses: ncipollo/release-action@v1
       with:
-        tag: N1-OpenWrt | ${{ env.DATE }}
+        tag: OpenWrt_S905D_${{ env.PACKAGED_OUTPUTDATE }}
+        name: N1-OpenWrt | ${{ env.DATE }}
         allowUpdates: true
         artifacts: ${{ env.PACKAGED_OUTPUTPATH }}/*
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
-          编译使用版本:
-          ${{ env.useVersionInfo }}
-      
-          刷机固件简介：
+          N1 OpenWrt 精简版本
+    
             打包日期：${{ env.PACKAGED_OUTPUTDATE }}
             内核版本：${{ env.KERNEL_VERSION }}
-            默认IP：192.168.1.200 默认用户名密码： root/password
+            
+            默认IP：192.168.1.200
+            默认用户名：root
+            默认密码：password
             安装到EMMC及在线更新：系统-->晶晨宝盒
             
     - name: Remove old Releases
