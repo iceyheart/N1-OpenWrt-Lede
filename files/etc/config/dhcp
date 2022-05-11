@@ -41,4 +41,4 @@ config srvhost
 
 config domain
 	option name 'time.android.com'
-	option ip '192.168.31.2'
+	option ip '192.168.1.200'
