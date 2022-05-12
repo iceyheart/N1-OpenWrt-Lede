@@ -1,0 +1,65 @@
+config defaults                                                                                                                                                                      
+        option input 'ACCEPT'                                                                                                                                                        
+        option output 'ACCEPT'                                                                                                                                                       
+        option forward 'REJECT'                                                                                                                                                      
+        option flow_offloading_hw '0'                                                                                                                                                
+        option flow_offloading '0'                                                                                                                                                   
+        option fullcone '0'                                                                                                                                                          
+                                                                                                                                                                                     
+config zone                                                                                                                                                                          
+        option name 'lan'                                                                                                                                                            
+        option input 'ACCEPT'                                                                                                                                                        
+        option output 'ACCEPT'                                                                                                                                                       
+        option forward 'ACCEPT'                                                                                                                                                      
+        option network 'lan lan6'                                                                                                                                                    
+                                                                                                                                                                                     
+config include                                                                                                                                                                       
+        option path '/etc/firewall.user'                                                                                                                                             
+                                                                                                                                                                                     
+config include 'passwall'                                                                                                                                                            
+        option type 'script'                                                                                                                                                         
+        option path '/var/etc/passwall.include'                                                                                                                                      
+        option reload '1'                                                                                                                                                            
+                                                                                                                                                                                     
+config include 'passwall_server'                                                                                                                                                     
+        option type 'script'                                                                                                                                                         
+        option path '/var/etc/passwall_server.include'                                                                                                                               
+        option reload '1'                                                                                                                                                            
+                                                                                                                                                                                     
+config include 'zerotier'                                                                                                                                                            
+        option type 'script'                                                                                                                                                         
+        option path '/etc/zerotier.start'                                                                                                                                            
+        option reload '1'                                                                                                                                                            
+                                                                                                                                                                                     
+config include 'miniupnpd'                                                                                                                                                           
+        option type 'script'                                                                                                                                                         
+        option path '/usr/share/miniupnpd/firewall.include'                                                                                                                          
+        option family 'any'                                                                                                                                                          
+        option reload '1'                                                                                                                                                            
+                                                                                                                                                                                     
+config include 'mia'                                                                                                                                                                 
+        option type 'script'                                                                                                                                                         
+        option path '/etc/mia.include'                                                                                                                                               
+        option reload '1'                                                                                                                                                            
+                                                                                                                                                                                     
+config include 'passwall2'                                                                                                                                                           
+        option type 'script'                                                                                                                                                         
+        option path '/var/etc/passwall2.include'                                                                                                                                     
+        option reload '1'                                                                                                                                                            
+                                                                                                                                                                                     
+config include 'passwall2_server'                                                                                                                                                    
+        option type 'script'                                                                                                                                                         
+        option path '/var/etc/passwall2_server.include'                                                                                                                              
+        option reload '1'                                                                                                                                                            
+                                                                                                                                                                                     
+config include 'shadowsocksr'                                                                                                                                                        
+        option type 'script'                                                                                                                                                         
+        option path '/var/etc/shadowsocksr.include'                                                                                                                                  
+        option reload '1'                                                                                                                                                            
+                                                                                                                                                                                     
+config rule 'kms'                                                                                                                                                                    
+        option name 'kms'                                                                                                                                                            
+        option target 'ACCEPT'                                                                                                                                                       
+        option src 'wan'                                                                                                                                                             
+        option proto 'tcp'                                                                                                                                                           
+        option dest_port '1688' 
