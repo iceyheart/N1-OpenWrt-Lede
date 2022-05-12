@@ -10,3 +10,5 @@ rm -rf package/lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 #Add amlogic管理
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/lean/luci-app-amlogic
+#Add luci-app-passwall
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lean/luci-app-passwall
