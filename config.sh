@@ -165,6 +165,7 @@ CONFIG_PACKAGE_luci-theme-netgear=y
 CONFIG_PACKAGE_luci-theme-opentomcat=y
 CONFIG_PACKAGE_naiveproxy=y
 CONFIG_PACKAGE_npc=y
+CONFIG_PACKAGE_nano=y
 CONFIG_PACKAGE_odhcp6c=y
 CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
 CONFIG_PACKAGE_odhcpd-ipv6only=y
