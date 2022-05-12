@@ -2,8 +2,7 @@
 
 **集成**
 - 晶晨宝盒：安装 OpenWrt 至 EMMC、手动上传升级/在线下载更新 OpenWrt 固件或内核版本、备份/恢复固件配置、快照管理及自定义固件/内核下载站点等功能；
-- 插件SSR+、passwall2、nps、zerotier、kms、timectrol、KMS，其它服务略；
-- passwall插件目前仓库里缺乏luci-app-passwall，手动安装后发现工作不正常。
+- 插件SSR+、passwall、passwall2、nps、zerotier、kms、timectrol、KMS，其它服务略。
 
 **旁路网关模式**
 - DHCP关、wireless关
