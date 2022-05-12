@@ -56,6 +56,7 @@ CONFIG_PACKAGE_getopt=y
 CONFIG_PACKAGE_glib2=y
 CONFIG_PACKAGE_haproxy=y
 CONFIG_PACKAGE_hysteria=y
+CONFIG_PACKAGE_htop=y
 CONFIG_PACKAGE_ip6tables=y
 CONFIG_PACKAGE_ip6tables-mod-nat=y
 CONFIG_PACKAGE_ipt2socks=y
