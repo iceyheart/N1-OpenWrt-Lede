@@ -39,6 +39,3 @@ config srvhost
 	option class '0'
 	option weight '100'
 
-config domain
-	option name 'time.android.com'
-	option ip '192.168.1.200'
