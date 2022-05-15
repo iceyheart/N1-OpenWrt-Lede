@@ -9,6 +9,9 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
+  push:
+    branches:
+      - main
   schedule:
     - cron: 0 3 * * 0
 
