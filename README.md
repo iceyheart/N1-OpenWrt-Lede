@@ -1,7 +1,7 @@
-# N1 OpenWrt 轻量固件--旁路专用
+# N1 OpenWrt 轻量固件--旁路专用 每周日早8点自动更新
 
 **集成**
-- 晶晨宝盒：安装 OpenWrt 至 EMMC、手动上传升级/在线下载更新 OpenWrt 固件或内核版本、备份/恢复固件配置、快照管理及自定义固件/内核下载站点等功能；
+- 晶晨宝盒：安装 OpenWrt 至 EMMC、在线下载更新——>完整更新全系统；
 - 插件SSR+、passwall、passwall2、nps、zerotier、kms、timectrol、KMS，其它服务略。
 
 **旁路网关模式**
