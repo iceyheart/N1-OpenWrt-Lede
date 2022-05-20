@@ -25,7 +25,7 @@ env:
   SRC_SH: src.sh
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
-  KERNEL_VERSION: 5.15.39
+  KERNEL_VERSION: 5.15.41
 
 jobs:
   build_openwrt:
