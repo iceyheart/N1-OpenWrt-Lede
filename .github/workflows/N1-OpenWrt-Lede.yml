@@ -25,8 +25,7 @@ env:
   SRC_SH: src.sh
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
-  KERNEL_VERSION: 5.15.41
-
+  
 jobs:
   build_openwrt:
     name: Build OpenWrt and release
@@ -112,7 +111,7 @@ jobs:
       env:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
         PACKAGE_SOC: s905d
-        KERNEL_VERSION_NAME: ${{ env.KERNEL_VERSION }}
+        KERNEL_VERSION_NAME: 5.15.41
         KERNEL_AUTO_LATEST: true
         WHOAMI: CHH
 
@@ -126,9 +125,7 @@ jobs:
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
           N1 OpenWrt 精简版本
-    
-            打包日期：${{ env.PACKAGED_OUTPUTDATE }}
-                      
+                                    
             默认IP：192.168.1.200
             默认用户名：root
             默认密码：password
