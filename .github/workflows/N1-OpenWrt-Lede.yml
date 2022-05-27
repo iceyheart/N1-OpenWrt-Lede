@@ -111,7 +111,7 @@ jobs:
       env:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
         PACKAGE_SOC: s905d
-        KERNEL_VERSION_NAME: 5.15.41
+        KERNEL_VERSION_NAME: 5.15.41_5.17.5
         KERNEL_AUTO_LATEST: true
         WHOAMI: CHH
 
@@ -126,7 +126,7 @@ jobs:
         body: |
           N1 OpenWrt 精简版本
                                     
-            默认IP：192.168.1.200
+            * 默认IP：192.168.1.200
             默认用户名：root
             默认密码：password
             安装到EMMC及在线更新：系统-->晶晨宝盒
