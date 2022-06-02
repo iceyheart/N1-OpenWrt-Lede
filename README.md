@@ -3,6 +3,7 @@
 **集成**
 - 晶晨宝盒：安装 OpenWrt 至 EMMC、在线下载更新——>完整更新全系统；
 - 插件SSR+、passwall、passwall2、nps、zerotier、kms、timectrol、KMS，其它服务略。
+- 新增smartdns、adguardhome
 
 **旁路网关模式**
 - DHCP关、wireless关
