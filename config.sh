@@ -216,6 +216,7 @@ CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
 CONFIG_PACKAGE_shadowsocks-libev-ss-server=y
 CONFIG_PACKAGE_shadowsocksr-libev-ssr-server=y
 CONFIG_PACKAGE_simple-obfs-client=y
+CONFIG_PACKAGE_smartdns=y
 CONFIG_PACKAGE_tar=y
 CONFIG_PACKAGE_terminfo=y
 CONFIG_PACKAGE_trojan=y
