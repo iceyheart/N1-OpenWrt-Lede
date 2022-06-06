@@ -14,6 +14,5 @@
 - passwall里国内DNS分流选DNSMASQ，远程DNS选择xray - DOH - cloudflare|google，模式选择gfwlist，勾选缓存解析，不勾选chinadns-ng
 - openwrt网络lan接口里的dns填当地运营商dns而非主路由IP
 - 该设置可在ADH中显示局域网设备访问情况及DNS访问细节，国内DNS优选，GFW列表的国外地址走国外DNS。
-
-- 源码来源： Lean 的 Openwrt 源码仓库 https://github.com/coolsnowwolf/lede
-- 脚本参考： https://github.com/huangqian8/Cloud-N1-OpenWrt | https://github.com/P3TERX/Actions-OpenWrt
+*源码来源： Lean 的 Openwrt 源码仓库 https://github.com/coolsnowwolf/lede
+*脚本参考： https://github.com/huangqian8/Cloud-N1-OpenWrt | https://github.com/P3TERX/Actions-OpenWrt
