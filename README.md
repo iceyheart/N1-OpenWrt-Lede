@@ -3,7 +3,7 @@
 **集成**
 - 晶晨宝盒：安装 OpenWrt 至 EMMC、在线下载更新——>完整更新全系统；
 - 插件SSR+、passwall、passwall2、nps、zerotier、kms、timectrol、KMS，其它服务略。
-- 新增smartdns、adguardhome、chinadns-ng，Dnsmasq full功能补全
+- 新增smartdns、adguardhome、chinadns-ng，Dnsmasq full功能补全，便于大家调整尝试不同组合。
 - SSR+加入hysteria支持
 
 **旁路网关模式**
