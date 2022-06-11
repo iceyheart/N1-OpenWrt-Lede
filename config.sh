@@ -140,7 +140,6 @@ CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_V2ray=y
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
 CONFIG_PACKAGE_luci-app-smartdns=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy=y
@@ -249,7 +248,7 @@ CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
 CONFIG_boost-variant-release=y
-#CONFIG_PACKAGE_UnblockNeteaseMusic-Go is not set
+CONFIG_PACKAGE_UnblockNeteaseMusic-Go=y
 CONFIG_PACKAGE_etherwake=y
 CONFIG_PACKAGE_kmod-nf-conntrack-netlink=y
 CONFIG_PACKAGE_miniupnpd=y
