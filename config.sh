@@ -11,7 +11,7 @@ CONFIG_PACKAGE_TAR_BZIP2=y
 CONFIG_PACKAGE_TAR_GZIP=y
 CONFIG_PACKAGE_TAR_XZ=y
 CONFIG_PACKAGE_TAR_ZSTD=y
-CONFIG_PACKAGE_UnblockNeteaseMusic-Go=y
+#CONFIG_PACKAGE_UnblockNeteaseMusic-Go=not
 CONFIG_PACKAGE_attr=y
 CONFIG_PACKAGE_bash=y
 CONFIG_PACKAGE_blkid=y
@@ -113,7 +113,7 @@ CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_Obfs=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin=y
 CONFIG_PACKAGE_luci-app-ttyd=y
-CONFIG_PACKAGE_luci-app-unblockmusic=y
+#CONFIG_PACKAGE_luci-app-unblockmusic=not
 # CONFIG_PACKAGE_luci-app-upnp is not set
 # CONFIG_PACKAGE_luci-app-vsftpd is not set
 # CONFIG_PACKAGE_luci-app-wol is not set
@@ -124,7 +124,7 @@ CONFIG_PACKAGE_luci-i18n-nps-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-passwall2-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y
+#CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=not
 CONFIG_PACKAGE_luci-i18n-zerotier-zh-cn=y
 CONFIG_PACKAGE_luci-proto-ipv6=y
 CONFIG_PACKAGE_luci-theme-argon=y
