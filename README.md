@@ -11,7 +11,7 @@
 
 **参考设置**
 - 推荐使用passwall2
-- 节点选择xray分流，直接选择节点有可能出现国内走国外的现象
+- 节点选择xray分流，直接选择节点相当于全局代理
 - 国内dns选择自动，国外自由选择。如需代理IPV6选择useIP
 - AD黑洞，规则里修改成geosite:category-ads-all
 * 源码来源： Lean 的 Openwrt 源码仓库 https://github.com/coolsnowwolf/lede
