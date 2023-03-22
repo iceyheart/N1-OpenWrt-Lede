@@ -12,7 +12,7 @@
 - 后续如有更改可保留配置升级
 
 **参考设置**
-- 推荐使用passwall2，TPROXY模式防止DNS泄露
+- 推荐使用passwall2。自带DNS管理，TPROXY模式防止DNS泄露，因此不再需要smartDns和AdguadeHome
 - 节点选择xray分流 （直接选择节点相当于全局代理）
 - 默认分流策略为白名单模式，可按以下排序自行调整成PAC(gfw)模式：
    - AD (geosite:category-ads-all)
