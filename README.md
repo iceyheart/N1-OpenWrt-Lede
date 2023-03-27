@@ -20,5 +20,6 @@
    - Proxy (geosite:gfw geosite:greatfire)
    - Direct
 - 国内dns自动(建议手动选择alidns)，国外自由选择。如需代理IPV6选择useIP
+**经测试6.1内核对IPV6支持存在问题，5.15可正常支持。
 * 源码来源： Lean 的 Openwrt 源码仓库 https://github.com/coolsnowwolf/lede
 - 脚本参考： https://github.com/huangqian8/Cloud-N1-OpenWrt | https://github.com/P3TERX/Actions-OpenWrt
