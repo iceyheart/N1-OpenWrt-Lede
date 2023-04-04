@@ -3,7 +3,7 @@
 **集成**
 - 晶晨宝盒：安装 OpenWrt 至 EMMC、在线下载更新——>完整更新全系统；
 - 插件SSR+、passwall、passwall2、nps、zerotier、kms、timectrol
-  - 新增openclash
+  - 新增openclash(4月3日）
 
 
 **旁路网关模式**
