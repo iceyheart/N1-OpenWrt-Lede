@@ -10,6 +10,7 @@
 - DHCP关
 - 默认IP 192.168.1.200，网关192.168.1.1，关闭桥接，开启IPV6，取消分配前缀
 - 后续如有更改可保留配置升级
+- 个人目前改单臂主路由模式使用，加VLAN交换机或参考本人文章设置AP https://www.ymschh.top/2023/04/04/小米路由ax1800开启vlan实现n1单线复用/
 
 **参考设置**
 - 推荐使用passwall2，完美兼容IPV6，自带DNS管理，使用TPROXY模式可完全防止DNS泄露（openclash做不到），也不再需要smartDns和AdguadeHome
