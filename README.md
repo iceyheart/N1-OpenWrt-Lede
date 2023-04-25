@@ -22,7 +22,5 @@
    - Direct
 - 国内dns自动(建议手动选择alidns)，国外自由选择。如需代理IPV6选择useIP
 
-**如遇+版有IPV6问题，可选择+o版**
-
 * 源码来源： Lean 的 Openwrt 源码仓库 https://github.com/coolsnowwolf/lede
 - 脚本参考： https://github.com/huangqian8/Cloud-N1-OpenWrt | https://github.com/P3TERX/Actions-OpenWrt
