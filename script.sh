@@ -4,8 +4,8 @@ cd openwrt
 rm -rf files/etc/config/wireless
 rm -rf files/etc/modules.d/wireless_enable
 # geodata
-wget https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat usr/share/v2ray/geosite.dat
-wget https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat usr/share/v2ray/geoip.dat
+wget -q -cP /usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+wget -q -cP /usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
 # Add luci-theme-opentomcat
 svn co https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/lean/luci-theme-opentomcat
 # Add luci-theme-argon
