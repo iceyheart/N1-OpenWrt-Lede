@@ -61,13 +61,13 @@ config include 'shadowsocksr'
 config rule 'kms'                                                                                                                                                                    
         option name 'kms'                                                                                                                                                            
         option target 'ACCEPT'                                                                                                                                                       
-        option src 'wan'                                                                                                                                                             
+        option src '*'                                                                                                                                                             
         option proto 'tcp'                                                                                                                                                           
         option dest_port '1688' 
        
 config rule
 	option name 'Allow-DHCP-Renew'
-	option src 'wan'
+	option src 'lan'
 	option proto 'udp'
 	option dest_port '68'
 	option target 'ACCEPT'
@@ -75,7 +75,7 @@ config rule
 
 config rule
 	option name 'Allow-Ping'
-	option src 'wan'
+	option src 'lan'
 	option proto 'icmp'
 	option icmp_type 'echo-request'
 	option family 'ipv4'
@@ -83,7 +83,7 @@ config rule
 
 config rule
 	option name 'Allow-DHCPv6'
-	option src 'wan'
+	option src 'lan6'
 	option proto 'udp'
 	option src_ip 'fe80::/10'
 	option src_port '547'
@@ -94,7 +94,7 @@ config rule
        
 config rule
 	option name 'Allow-ICMPv6-Input'
-	option src 'wan'
+	option src 'lan6'
 	option proto 'icmp'
 	list icmp_type 'echo-request'
 	list icmp_type 'echo-reply'
@@ -113,7 +113,7 @@ config rule
 
 config rule
 	option name 'Allow-ICMPv6-Forward'
-	option src 'wan'
+	option src 'lan6'
 	option dest '*'
 	option proto 'icmp'
 	list icmp_type 'echo-request'
@@ -128,7 +128,7 @@ config rule
 	option target 'ACCEPT'
 
 config rule
-	option src 'wan'
+	option src 'lan6'
 	option name 'Forbidden_Wan_RA'
 	option family 'ipv6'
 	option proto 'icmp'
