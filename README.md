@@ -16,10 +16,14 @@
 **参考设置**
 - 推荐使用passwall2，完美兼容IPV6，自带DNS管理，使用TPROXY模式可完全防止DNS泄露（openclash做不到），也不再需要smartDns和AdguadeHome
 - 节点选择xray分流 （直接选择节点相当于全局代理）
-- 默认分流策略为白名单模式，可按以下排序自行调整成PAC(gfw)模式：
-   - AD (geosite:category-ads-all)
+- 默认分流策略为白名单模式，个人推荐PAC(gfw)模式：
+   - AD
+     - geosite:category-ads-all
    - BT
-   - Proxy (geosite:gfw geosite:greatfire)
+   - Proxy（此处根据使用需求添加走代理网址，geosite分类列表https://github.com/v2fly/domain-list-community/tree/master/data)
+     - geosite:disney
+     - geosite:gfw
+     - geosite:greatfire) 
    - Direct
 - 国内dns自动(建议手动选择alidns)，国外自由选择。如需代理IPV6选择useIP
 
