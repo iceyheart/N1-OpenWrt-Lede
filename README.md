@@ -20,10 +20,11 @@
    - AD
      - geosite:category-ads-all
    - BT
-   - Proxy（此处根据使用需求添加走代理网址，geosite分类列表https://github.com/v2fly/domain-list-community/tree/master/data)
+   - Proxy  此处根据需求添加走代理网址，geosite分类列表https://github.com/v2fly/domain-list-community/tree/master/data
      - geosite:disney
      - geosite:gfw
-     - geosite:greatfire) 
+     - geosite:greatfire
+     - geoip:telegram
    - Direct
 - 国内dns自动(建议手动选择alidns)，国外自由选择。如需代理IPV6选择useIP
 
