@@ -1,8 +1,8 @@
 #!/bin/bash
 cd openwrt
 # wireless
-rm -rf files/etc/config/wireless
-rm -rf files/etc/modules.d/wireless_enable
+#rm -rf files/etc/config/wireless
+#rm -rf files/etc/modules.d/wireless_enable
 # Firewall custom
 #echo "iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE" >> package/network/config/firewall/files/firewall.user
 # geodata
