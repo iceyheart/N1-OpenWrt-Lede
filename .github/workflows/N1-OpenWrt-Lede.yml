@@ -34,7 +34,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         ref: main
 
@@ -130,7 +130,7 @@ jobs:
             安装到EMMC及在线更新：系统-->晶晨宝盒
             
     - name: Remove old Releases
-      uses: dev-drprasad/delete-older-releases@v0.1.0
+      uses: dev-drprasad/delete-older-releases@v0.2.0
       with:
         keep_latest: 10
         delete_tags: true
