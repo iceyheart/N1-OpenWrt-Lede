@@ -112,6 +112,7 @@ jobs:
         KERNEL_VERSION_NAME: 5.15.48_6.1.6
         KERNEL_AUTO_LATEST: true
         WHOAMI: CHH
+        GH_TOKEN: ${{ secrets.RELEASES_TOKEN }}
 
     - name: Create release
       uses: ncipollo/release-action@v1
