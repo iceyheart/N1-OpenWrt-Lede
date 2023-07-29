@@ -353,5 +353,13 @@ CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir=y
 CONFIG_PACKAGE_simple-obfs-client=y
 CONFIG_PACKAGE_tcping=y
 CONFIG_PACKAGE_xray-core=y
+CONFIG_DOCKER_CGROUP_OPTIONS=y
+CONFIG_DOCKER_NET_MACVLAN=y
+CONFIG_DOCKER_STO_EXT4=y
+CONFIG_PACKAGE_docker=y
+CONFIG_PACKAGE_dockerd=y
+CONFIG_PACKAGE_luci-app-dockerman=y
+CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn=y
+CONFIG_PACKAGE_luci-lib-docker=y
 # CONFIG_PERL_THREADS is not set
 EOF
