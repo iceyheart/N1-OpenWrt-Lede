@@ -5,6 +5,7 @@
 - 插件SSR+、passwall、passwall2、nps、zerotier、kms、timectrol
   - 新增openclash(4月3日）
 - 更新第三方软件源，方便自行安装包括istore等在内的IPK文件（4月27）
+- 默认Argon主题
 
 
 **旁路网关模式**
