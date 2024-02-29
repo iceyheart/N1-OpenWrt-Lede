@@ -16,9 +16,9 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Ma
 rm -rf package/lean/luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git package/lean/luci-app-amlogic
 #Add luci-app-passwall
-git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lean/luci-app-passwall
+git clone -b main https://github.com/xiaorouji/openwrt-passwall.git package/lean/luci-app-passwall
 #Add openclash
-svc no https://github.com/vernesong/OpenClash/tree/master/luci-app-openclash package/lean/luci-app-openclash
+svn co https://github.com/vernesong/OpenClash/tree/master/luci-app-openclash package/lean/luci-app-openclash
 #Add luci-app-smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns
 #Add luci-app-adguardhome
