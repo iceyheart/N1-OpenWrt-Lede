@@ -17,7 +17,7 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 #Add luci-app-passwall
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lean/luci-app-passwall
 #Add openclash
-svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
+#svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
 #Add luci-app-smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns
 #Add luci-app-adguardhome
