@@ -19,14 +19,6 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/lean/luci-app-am
 git clone -b main https://github.com/xiaorouji/openwrt-passwall.git package/lean/luci-app-passwall
 #Add openclash
 #svn co https://github.com/vernesong/OpenClash/tree/master/luci-app-openclash package/lean/luci-app-openclash
-mkdir package/lean/luci-app-openclash
-cd package/lean/luci-app-openclash
-git init
-git remote add -f origin https://github.com/vernesong/OpenClash.git
-git config core.sparsecheckout true
-echo "luci-app-openclash" >> .git/info/sparse-checkout
-git pull --depth 1 origin master
-git branch --set-upstream-to=origin/master master
 #Add luci-app-smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns
 #Add luci-app-adguardhome
