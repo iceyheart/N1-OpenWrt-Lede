@@ -21,7 +21,6 @@ pushd package/openwrt-fchomo
 umask 022
 git checkout
 popd
-make package/luci-app-fchomo/compile V=s BUILD_LOG=y -j$(nproc)
 #Add luci-app-passwall
 #git clone -b main https://github.com/xiaorouji/openwrt-passwall.git package/lean/luci-app-passwall
 #Add openclash
