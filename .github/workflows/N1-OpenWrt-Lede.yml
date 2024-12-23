@@ -120,7 +120,7 @@ jobs:
         tag: Cudy_tr3000_${{ env.PACKAGED_OUTPUTDATE }}
         name: cudy_tr3000-Immortalwrt | ${{ env.DATE }}
         allowUpdates: true
-        artifacts: "openwrt/bin/targets/*.bin"
+        artifacts: 'openwrt/bin/targets/*/*/*.bin'
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
           Cudy tr3000 v1
