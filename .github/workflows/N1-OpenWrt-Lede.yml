@@ -2,7 +2,6 @@ name: N1-OpenWrt-Lede
 
 
 on:
-  repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:
@@ -10,7 +9,7 @@ on:
         required: false
         default: 'false'
         
-  push:
+#  push:
 #  schedule:
 #    - cron: 0 0 * * 5
 
