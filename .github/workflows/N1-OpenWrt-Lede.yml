@@ -11,8 +11,8 @@ on:
         default: 'false'
         
   push:
-  schedule:
-    - cron: 0 0 * * 5
+#  schedule:
+#    - cron: 0 0 * * 5
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
@@ -66,11 +66,11 @@ jobs:
     - name: Load custom feeds
       run: |
      #   [ -e files ] && mv files openwrt/files
-        chmod +x $SCRIPT_SH
-        ./$SCRIPT_SH
                       
     - name: Update feeds
       run: |
+        chmod +x $SCRIPT_SH
+        ./$SCRIPT_SH
         chmod +x $SRC_SH
         ./$SRC_SH
         cd openwrt && ./scripts/feeds update -a
