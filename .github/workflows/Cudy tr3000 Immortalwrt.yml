@@ -135,8 +135,8 @@ jobs:
     - name: Create release
       uses: ncipollo/release-action@v1
       with:
-        tag: Cudy_tr3000 | ${{ env.PACKAGED_OUTPUTDATE }}
-        name: cudy_tr3000-Immortalwrt | ${{ env.DATE }}
+        tag: ${{ env.tag_name }}
+        name: cudy_tr3000_Immortalwrt | ${{ env.DATE }}
         allowUpdates: true
         artifacts: "${{ env.FIRMWARE }}/*.*,${{ env.PACKAGED_OUTPUTPATH }}/*.*"
         token: ${{ secrets.RELEASES_TOKEN }}
