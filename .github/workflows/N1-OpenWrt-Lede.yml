@@ -102,7 +102,7 @@ jobs:
         du -h --max-depth=1 ./ --exclude=build_dir --exclude=bin
         du -h --max-depth=1 ./build_dir
         du -h --max-depth=1 ./bin
-        echo "::set-output name=status::success"
+        echo "::set-output name=status::success"      
 
   #  - name: Package Armvirt as OpenWrt
   #    uses: ophub/flippy-openwrt-actions@main
@@ -114,13 +114,31 @@ jobs:
   #      WHOAMI: CHH
   #      GH_TOKEN: ${{ secrets.RELEASES_TOKEN }}
 
+    - name: Organize files
+      id: organize
+      if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+      run: |
+        cd openwrt/bin/targets/*/*
+        rm -rf packages 
+        echo "FIRMWARE=$PWD" >> $GITHUB_ENV
+        echo "status=success" >> $GITHUB_OUTPUT
+
+    - name: Upload firmware directory
+      uses: actions/upload-artifact@v3
+      if: steps.organize.outputs.status == 'success' && !cancelled()
+      with:
+        name: OpenWrt_firmware
+        path: |
+            ${{ env.FIRMWARE }}
+            ${{ env.PACKAGED_OUTPUTPATH }} 
+            
     - name: Create release
       uses: ncipollo/release-action@v1
       with:
         tag: Cudy_tr3000 | ${{ env.PACKAGED_OUTPUTDATE }}
         name: cudy_tr3000-Immortalwrt | ${{ env.DATE }}
         allowUpdates: true
-        artifacts: openwrt/bin/targets/*/*/*
+        artifacts: "${{ env.FIRMWARE }}/*.*,${{ env.PACKAGED_OUTPUTPATH }}/*.*"
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
           Cudy tr3000 v1
