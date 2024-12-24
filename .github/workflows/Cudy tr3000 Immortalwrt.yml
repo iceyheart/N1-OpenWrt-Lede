@@ -14,7 +14,7 @@ on:
 #    - cron: 0 0 * * 5
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
+  REPO_URL: https://www.github.com/openwrt/openwrt
   REPO_BRANCH: openwrt-23.05
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -67,7 +67,6 @@ jobs:
      #   [ -e files ] && mv files openwrt/files
         chmod +x $SRC_SH
         ./$SRC_SH
-        git pull
         
     - name: Update feeds
       run: |
