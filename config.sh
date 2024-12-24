@@ -15,7 +15,6 @@ CONFIG_PACKAGE_libpcre2=y
 CONFIG_PACKAGE_librt=y
 CONFIG_PACKAGE_luci-app-fchomo=y
 CONFIG_PACKAGE_luci-i18n-fchomo-zh-cn=y
-CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_mihomo=y
 CONFIG_PACKAGE_wget-ssl=y
 CONFIG_PACKAGE_yq=y
