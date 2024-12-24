@@ -15,12 +15,10 @@ cd openwrt
 #Add amlogic管理
 #rm -rf package/lean/luci-app-amlogic
 #git clone https://github.com/ophub/luci-app-amlogic.git package/lean/luci-app-amlogic
-#Add fchomo
-git clone --depth 1 --branch master --single-branch --no-checkout https://github.com/muink/openwrt-fchomo.git package/openwrt-fchomo
-pushd package/openwrt-fchomo
-umask 022
-git checkout
-popd
+#Add packges
+sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
+git pull
 #Add luci-app-passwall
 #git clone -b main https://github.com/xiaorouji/openwrt-passwall.git package/lean/luci-app-passwall
 #Add openclash
