@@ -117,10 +117,10 @@ jobs:
     - name: Create release
       uses: ncipollo/release-action@v1
       with:
-        tag: Cudy_tr3000_${{ env.PACKAGED_OUTPUTDATE }}
+        tag: Cudy_tr3000 | ${{ env.PACKAGED_OUTPUTDATE }}
         name: cudy_tr3000-Immortalwrt | ${{ env.DATE }}
         allowUpdates: true
-        artifacts: openwrt/bin/targets/*/*/*.bin
+        artifacts: openwrt/bin/targets/*/*/*
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
           Cudy tr3000 v1
