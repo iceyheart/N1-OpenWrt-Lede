@@ -65,8 +65,8 @@ jobs:
     - name: Load custom feeds
       run: |
      #   [ -e files ] && mv files openwrt/files
-        chmod +x $SRC_SH
-        ./$SRC_SH
+      git clone https://github.com/jerrykuku/luci-theme-argon.git
+      git clone -b main https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
         
     - name: Update feeds
       run: |
