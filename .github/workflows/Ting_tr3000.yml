@@ -3,10 +3,10 @@ name: Ting_tr3000
 
 on:
   workflow_dispatch:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
+#      ssh:
+#        description: 'SSH connection to Actions'
+#        required: false
+#        default: 'false'
 
 env:
   REPO_URL: https://www.github.com/openwrt/openwrt
@@ -54,7 +54,7 @@ jobs:
         echo "useVersionInfo=$useVersionInfo" >> $GITHUB_ENV
         echo "DATE=$(date "+%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV
         echo "tag_name=$(date +%Y%m%d)" >> $GITHUB_ENV
-
+        
     - name: Load custom feeds
       run: |
      #   [ -e files ] && mv files openwrt/files
