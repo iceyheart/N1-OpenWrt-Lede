@@ -65,18 +65,15 @@ jobs:
     - name: Load custom feeds
       run: |
      #   [ -e files ] && mv files openwrt/files
-      git clone https://github.com/jerrykuku/luci-theme-argon.git
-      git clone -b main https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
+        echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+        echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
+        git clone https://github.com/jerrykuku/luci-theme-argon.git
+        git clone -b main https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
         
-    - name: Update feeds
+    - name: Update & Install feeds
       run: |
-        chmod +x $SCRIPT_SH
-        ./$SCRIPT_SH
-
-        cd openwrt && ./scripts/feeds update -a
-
-    - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
+       ./scripts/feeds update -a
+       ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |
