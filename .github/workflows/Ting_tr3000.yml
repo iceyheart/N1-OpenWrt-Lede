@@ -54,6 +54,7 @@ jobs:
       run: |
         cd openwrt
         git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+        git clone https://github.com/morytyann/OpenWrt-mihomo.git package/luci-app-mihomo
         git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
         git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall-packages
         cp -rf package/passwall-packages/* package/luci-app-passwall
