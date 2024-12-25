@@ -2,10 +2,6 @@ name: Ting_tr3000
 
 on:
   workflow_dispatch:
-#      ssh:
-#        description: 'SSH connection to Actions'
-#        required: false
-#        default: 'false'
 
 env:
   REPO_URL: https://www.github.com/openwrt/openwrt
@@ -55,8 +51,8 @@ jobs:
         echo "tag_name=$(date +%Y%m%d)" >> $GITHUB_ENV
         
     - name: Load custom feeds
-      run: 
-     #   [ -e files ] && mv files openwrt/files
+      run: |
+        cd openwrt
         echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
         echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
         git clone https://github.com/jerrykuku/luci-theme-argon.git
@@ -64,6 +60,7 @@ jobs:
         
     - name: Update & Install feeds
       run: |
+       cd openwrt
        ./scripts/feeds update -a
        ./scripts/feeds install -a
 
