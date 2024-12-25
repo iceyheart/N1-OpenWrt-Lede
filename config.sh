@@ -20,8 +20,12 @@ CONFIG_PACKAGE_hysteria=y
 CONFIG_PACKAGE_ip-full=y
 CONFIG_PACKAGE_ipset=y
 CONFIG_PACKAGE_ipt2socks=y
+# CONFIG_PACKAGE_iptables-mod-filter is not set
 CONFIG_PACKAGE_kmod-inet-diag=y
+# CONFIG_PACKAGE_kmod-ipt-conntrack is not set
+# CONFIG_PACKAGE_kmod-ipt-filter is not set
 CONFIG_PACKAGE_kmod-ipt-ipset=y
+# CONFIG_PACKAGE_kmod-lib-textsearch is not set
 CONFIG_PACKAGE_kmod-netlink-diag=y
 CONFIG_PACKAGE_kmod-nf-socket=y
 CONFIG_PACKAGE_kmod-nf-tproxy=y
@@ -43,7 +47,10 @@ CONFIG_PACKAGE_libuci-lua=y
 CONFIG_PACKAGE_libudns=y
 CONFIG_PACKAGE_libuv=y
 CONFIG_PACKAGE_libwebsockets-full=y
-# CONFIG_PACKAGE_luci-app-ddns is not set
+# CONFIG_PACKAGE_libxtables is not set
+# CONFIG_PACKAGE_luci-app-control-timewol is not set
+# CONFIG_PACKAGE_luci-app-control-webrestriction is not set
+# CONFIG_PACKAGE_luci-app-control-weburl is not set
 CONFIG_PACKAGE_luci-app-passwall=y
 CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy=y
 CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Hysteria=y
@@ -60,11 +67,10 @@ CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray=y
 CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray_Plugin=y
 CONFIG_PACKAGE_luci-app-passwall_Nftables_Transparent_Proxy=y
 # CONFIG_PACKAGE_luci-app-ramfree is not set
+# CONFIG_PACKAGE_luci-app-timecontrol is not set
 CONFIG_PACKAGE_luci-app-ttyd=y
-CONFIG_PACKAGE_luci-app-turboacc=y
 CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-turboacc-zh-cn=y
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_microsocks=y
 CONFIG_PACKAGE_resolveip=y
