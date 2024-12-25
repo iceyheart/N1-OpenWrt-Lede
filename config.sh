@@ -51,7 +51,6 @@ CONFIG_PACKAGE_libwebsockets-full=y
 # CONFIG_PACKAGE_luci-app-control-timewol is not set
 # CONFIG_PACKAGE_luci-app-control-webrestriction is not set
 # CONFIG_PACKAGE_luci-app-control-weburl is not set
-CONFIG_PACKAGE_luci-app-mihomo=y
 CONFIG_PACKAGE_luci-app-passwall=y
 CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy=y
 CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Hysteria=y
