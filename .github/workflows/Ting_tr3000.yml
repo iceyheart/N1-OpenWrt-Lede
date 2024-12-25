@@ -43,7 +43,7 @@ jobs:
 
     - name: Clone source code
       run: |
-        git clone -b $REPO_BRANCH --single-branch --filter=blob:none $REPO_URL openwrt
+        git clone -b $REPO_BRANCH $REPO_URL openwrt
         cd openwrt
         useVersionInfo=$(git show -s --date=short --format="date: %cd<br/>commit: %s<br/>commit hash: %H")
         echo "useVersionInfo=$useVersionInfo" >> $GITHUB_ENV
@@ -53,10 +53,11 @@ jobs:
     - name: Load custom feeds
       run: |
         cd openwrt
-        echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-        echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
         git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-        git clone -b main https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
+        git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
+        git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall-packages
+        cp -rf package/passwall-packages/* package/luci-app-passwall
+        rm -rf package/passwall-packages
         
     - name: Update & Install feeds
       run: |
