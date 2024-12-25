@@ -127,7 +127,7 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         tag: ${{ env.tag_name }}
-        name: cudy_tr3000_Immortalwrt_${{ env.REPO_BRANCH }} | ${{ env.DATE }}
+        name: Cudy_TR3000_Openwrt_${{ env.REPO_BRANCH }} | ${{ env.DATE }}
         allowUpdates: true
         artifacts: "${{ env.FIRMWARE }}/*.*,${{ env.PACKAGED_OUTPUTPATH }}/*.*"
         token: ${{ secrets.RELEASES_TOKEN }}
