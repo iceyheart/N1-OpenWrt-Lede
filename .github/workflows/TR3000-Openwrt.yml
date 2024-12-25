@@ -111,7 +111,7 @@ jobs:
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         cd openwrt/bin/targets/*/*
-        rm -rf !(*sysupgrade.bin)
+        rm -rf packages mt798*.bin *.manifest *.buildinfo *kernel.bin version.buildinfo profiles.json
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
 
