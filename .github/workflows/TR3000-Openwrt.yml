@@ -1,4 +1,4 @@
-name: Ting_tr3000 
+name: TR3000-Openwrt
 
 on:
   workflow_dispatch:
