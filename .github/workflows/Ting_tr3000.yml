@@ -1,6 +1,5 @@
 name: Ting_tr3000 
 
-
 on:
   workflow_dispatch:
 #      ssh:
@@ -56,7 +55,7 @@ jobs:
         echo "tag_name=$(date +%Y%m%d)" >> $GITHUB_ENV
         
     - name: Load custom feeds
-      run: |
+      run: 
      #   [ -e files ] && mv files openwrt/files
         echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
         echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
