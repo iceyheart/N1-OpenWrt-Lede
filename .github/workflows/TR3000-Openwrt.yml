@@ -111,7 +111,7 @@ jobs:
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         cd openwrt/bin/targets/*/*
-        rm -rf packages mt798*.bin *.manifest *.buildinfo *kernel.bin version.buildinfo profiles.json
+        rm -rf packages openwrt-armvirt-64-default.manifest openwrt-armvirt-64-Image sha256sums version.buildinfo feeds.buildinfo openwrt-armvirt-64-generic-kernel.bin openwrt-armvirt-64-generic.manifest
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
 
@@ -128,14 +128,14 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         tag: ${{ env.tag_name }}
-        name: Cudy_TR3000_Openwrt_${{ env.REPO_BRANCH }} | ${{ env.DATE }}
+        name: N1_Openwrt_${{ env.REPO_BRANCH }} | ${{ env.DATE }}
         allowUpdates: true
         artifacts: "${{ env.FIRMWARE }}/*.*,${{ env.PACKAGED_OUTPUTPATH }}/*.*"
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
-          Cudy tr3000 v1
+          N1
                                     
-            * 默认IP：192.168.1.1
+            * 默认IP：192.168.1.100
             默认用户名：root
             默认密码：
             
