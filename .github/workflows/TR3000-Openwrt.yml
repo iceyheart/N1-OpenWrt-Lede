@@ -133,9 +133,9 @@ jobs:
         artifacts: "${{ env.FIRMWARE }}/*.*,${{ env.PACKAGED_OUTPUTPATH }}/*.*"
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
-          N1
+          N1 旁路模式 ipv6中继
                                     
-            * 默认IP：192.168.1.100
+            * 默认IP：10.0.0.10
             默认用户名：root
             默认密码：
             
