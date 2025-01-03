@@ -17,14 +17,17 @@ config dnsmasq
 
 config dhcp 'lan'
 	option interface 'lan'
-	option ra_slaac '1'
-	list ra_flags 'managed-config'
-	list ra_flags 'other-config'
-	option ignore '1'
+        option dhcpv6 'relay'
+        option ra 'relay'
+        option ndp 'relay'
 
 config dhcp 'wan'
 	option interface 'wan'
 	option ignore '1'
+        option ra 'relay'
+        option dhcpv6 'relay'
+        option master '1'
+        option ndp 'relay'
 
 config odhcpd 'odhcpd'
 	option maindhcp '0'
