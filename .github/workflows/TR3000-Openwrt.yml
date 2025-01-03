@@ -53,6 +53,7 @@ jobs:
     - name: Load custom feeds
       run: |
         cd openwrt
+        [ -e files ] && mv files openwrt/files
         git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
         git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
         git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall-packages
@@ -95,15 +96,15 @@ jobs:
         du -h --max-depth=1 ./bin
         echo "::set-output name=status::success"      
 
-  #  - name: Package Armvirt as OpenWrt
-  #    uses: ophub/flippy-openwrt-actions@main
-  #    env:
-  #      OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
-  #      PACKAGE_SOC: s905d
-  #      KERNEL_VERSION_NAME: 5.15.149_6.1.79
- #       KERNEL_AUTO_LATEST: true
-  #      WHOAMI: CHH
-  #      GH_TOKEN: ${{ secrets.RELEASES_TOKEN }}
+    - name: Package Armvirt as OpenWrt
+      uses: ophub/flippy-openwrt-actions@main
+      env:
+       OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
+        PACKAGE_SOC: s905d
+        KERNEL_VERSION_NAME: 5.15.149_6.1.79
+        KERNEL_AUTO_LATEST: true
+        WHOAMI: CHH
+        GH_TOKEN: ${{ secrets.RELEASES_TOKEN }}
 
     - name: Organize files
       id: organize
